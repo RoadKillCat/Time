@@ -1,0 +1,18 @@
+<html>
+<head>
+<style>
+#time_div{
+	text-align: center;
+	font-size: 300px;
+}
+</style>
+</head>
+<body>
+<div id="time_div"></div>
+<script>
+setInterval(function(){
+	document.getElementById("time_div").innerText = Date().split(" ")[4]
+}, 40)
+</script>
+</body>
+</html>
